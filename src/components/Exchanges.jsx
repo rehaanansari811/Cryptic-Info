@@ -3,7 +3,7 @@ import axios from 'axios'
 import { server } from '../index'
 import { Container, HStack, Heading, Image, Text, VStack, Button } from '@chakra-ui/react';
 import Loader from './Loader';
-import Error from './Error';
+import Error from './ErrorComponent';
 
 
 function Exchanges() {

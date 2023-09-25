@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import {
-  chart as ChartJS,
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   PointElement,
@@ -11,7 +11,7 @@ import {
   Legend,
 } from "chart.js";
 
-  ChartJS.register(
+ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
@@ -21,7 +21,7 @@ import {
   Legend
 );
 
-new Chart = ({ arr = [], currency, days }) => {
+const Chart = ({ arr = [], currency, days }) => {
   const prices = [];
   const date = [];
 
@@ -31,7 +31,7 @@ new Chart = ({ arr = [], currency, days }) => {
     prices.push(arr[i][1]);
   }
 
-  const data =  new{
+  const data = {
     labels: date,
     datasets: [
       {

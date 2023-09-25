@@ -1,4 +1,4 @@
-import { Button, HStack } from '@chakra-ui/react'
+import { Button, HStack,Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -14,6 +14,13 @@ const Header = () => {
       <Button variant={'unstyled'}  color={'white'} mx={[0,'5']}>
         <Link to={'/coin'}>Coins</Link>
       </Button>
+      <HStack position={'absolute'} right={'23px'}>
+        <Text
+        color={'#f3e015'}
+        fontSize={'x-large'}
+        fontWeight={"bold"}
+        ><Link to={'/'}>Cryptic-Info</Link></Text>
+      </HStack>
     </HStack>
   )
 }
